@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Forms</title>
+</head>
+
+<body>
+  <h1>Coding Form!</h1>
+
+  <form class="form">
+    <div class="form-container">
+      <div class="email-section">
+        <label for="input-email">
+          Email
+        </label>
+        <div>
+          <input required type="text" name="email" id="input-email">
+        </div>
+      </div>
+
+      <div class="select-section">
+        <label for="select-an-option">
+          Why is coding cool?
+        </label>
+        <div>
+          <select name="options" id="select-an-option">
+            <option value="first-option">Select an option</option>
+            <option value="second-option">Because it's interesting</option>
+            <option value="third-option">Because it's fun</option>
+            <option value="fourth-option">Because it's powerful</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="choose-section">
+        Favorite Language (choose one)
+        <div>
+          <label>
+            <input type="radio" name="language" value="HTML">HTML
+          </label>
+          <label>
+            <input type="radio" name="language" value="CSS">CSS
+          </label>
+          <label>
+            <input type="radio" name="language" value="JavaScript">JavaScript
+          </label>
+        </div>
+      </div>
+
+      <div class="sign-section">
+        <label for="sign-up">
+          Would you like to sign up for more information?
+        </label>
+        <div>
+          <label>
+            <input type="checkbox" name="sign" value="checked"
+            id="sign-up">Sign me up!
+          </label>
+        </div>
+      </div>
+
+      <div class="comments-section">
+        <label for="comments">
+          Comments
+        </label>
+        <div>
+          <textarea name="comments" id="comments"
+          cols="30" rows="10"></textarea>
+        </div>
+      </div>
+      <div>
+        <button type="submit" value="submit">
+          Submit
+        </button>
+      </div>
+
+    </div>
+  </form>
+
+</body>
+</html>
