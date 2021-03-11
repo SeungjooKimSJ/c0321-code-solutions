@@ -1,0 +1,20 @@
+.hover-btn {
+  padding: 10px 30px;
+  font-size: 20px;
+  background-color: #f8f8f8;
+}
+
+.hover-btn:hover {
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+}
+
+thead {
+  background-color: #000;
+  color: #fff;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #d2d2d2;
+}
