@@ -1,0 +1,7 @@
+fieldset {
+  border-style: none;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
