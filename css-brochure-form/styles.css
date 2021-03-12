@@ -1,12 +1,17 @@
-fieldset {
-  border-style: none;
-  line-height: 1.6;
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+fieldset {
+  border-style: none;
+  line-height: 1.6;
+  width: 50vw;
+}
+
 h2 {
+  text-align: center;
   color: #ec5d57;
   text-transform: uppercase;
   font-family: 'Brandon Grotesque', sans-serif;
@@ -19,23 +24,19 @@ h2 {
   margin-bottom: 0.5rem;
 }
 
-form {
-  width: 50vw;
-}
-
 label {
   color: #000;
   text-transform: uppercase;
   font-family: 'Brandon Grotesque', sans-serif;
   font-weight: 500;
   font-size: 0.8rem;
-  padding-left: 0.5rem;
+  padding-left: 0.7rem;
 }
 
 input {
   border-radius: 5px;
   border: 1px solid #b3b3b3;
-  width: 95%;
+  width: 100%;
   padding: 0.7rem;
 }
 
@@ -51,7 +52,8 @@ input::placeholder {
   border-radius: 5px;
   border: 1px solid #b3b3b3;
   padding: 0.7rem;
-  width: 95%;
+  padding-left: 0;
+  width: 100%;
 }
 
 .btn {
@@ -69,12 +71,11 @@ button {
   text-transform: uppercase;
   padding: 10px 20px;
   margin-top: 0.5rem;
-  margin-right: 1.5rem;
 }
 
 button:hover {
   cursor: pointer;
-  background-color: #f8372a;
+  background-color: #eb1e0f;
   transition: background-color 0.7s ease-in-out;
 }
 
