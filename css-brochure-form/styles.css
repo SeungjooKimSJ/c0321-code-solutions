@@ -15,6 +15,10 @@ h2 {
   letter-spacing: 0.1rem;
 }
 
+.row {
+  margin-bottom: 0.5rem;
+}
+
 form {
   width: 50vw;
 }
@@ -31,9 +35,8 @@ label {
 input {
   border-radius: 5px;
   border: 1px solid #b3b3b3;
-  width: 90%;
+  width: 95%;
   padding: 0.7rem;
-  margin-bottom: 0.5rem;
 }
 
 input::placeholder {
@@ -44,11 +47,16 @@ input::placeholder {
 }
 
 #options {
+  background-color: #f3f3f3;
   border-radius: 5px;
   border: 1px solid #b3b3b3;
   padding: 0.7rem;
-  width: 90%;
-  margin-bottom: 0.5rem;
+  width: 95%;
+}
+
+.btn {
+  display: flex;
+  align-items: flex-end;
 }
 
 button {
@@ -56,4 +64,24 @@ button {
   color: #fff;
   border-radius: 50px;
   border-style: none;
+  font-family: 'AtlasGrotesk', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  margin-top: 0.5rem;
+  margin-right: 1.5rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #f8372a;
+  transition: background-color 0.7s ease-in-out;
+}
+
+button:focus {
+  outline: none;
+}
+
+.row:last-child {
+  text-align: right;
 }
