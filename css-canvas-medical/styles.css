@@ -21,7 +21,7 @@ header {
   list-style: none;
 }
 
-.nav-li {
+.header-nav .nav-li {
   margin: 0 2rem;
   color: #b7b7b7;
   font-weight: 600;
@@ -42,4 +42,23 @@ a {
   cursor: pointer;
   background-color: #1c98e6;
   transition: background-color 0.7s ease-in-out;
+}
+
+/* footer !!!!!!!!!!!! */
+.footer-nav {
+  list-style: none;
+  background-color: #fafafa;
+  color: #b7b7b7;
+  display: flex;
+  padding-left: 2rem;
+}
+
+.footer-nav li {
+  padding-left: 3.5rem;
+  margin: 2rem 0;
+}
+
+.footer-nav a {
+  color: #b7b7b7;
+  font-weight: 600;
 }
