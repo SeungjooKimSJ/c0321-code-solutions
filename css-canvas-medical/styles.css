@@ -2,8 +2,8 @@
 header {
   display: flex;
   justify-content: space-between;
-  margin: 1rem auto;
   padding: 0 3.5rem;
+  margin-bottom: 2rem;
   border-bottom: 1px solid #b7b7b7;
   width: 95%;
 }
@@ -41,7 +41,43 @@ a {
 .nav-li.contact:hover {
   cursor: pointer;
   background-color: #1c98e6;
+  color: #fff;
   transition: background-color 0.7s ease-in-out;
+}
+
+/* summary !!!!!!!!!!!! */
+.summary {
+  background-color: #525351;
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  height: 40vh;
+  padding: 0 3.5rem;
+}
+
+.address {
+  width: 12%;
+  line-height: 1.8;
+  padding-top: 0.5rem;
+  position: relative;
+  right: 18%;
+}
+
+.address h2 {
+  font-family: 'Tiempos Headline', sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+}
+
+.summary-link {
+  list-style: none;
+  line-height: 2.5;
+  margin-top: 2rem;
+  padding-top: 2.5rem;
+}
+
+.summary-link a {
+  color: #fff;
 }
 
 /* footer !!!!!!!!!!!! */
@@ -50,15 +86,27 @@ a {
   background-color: #fafafa;
   color: #b7b7b7;
   display: flex;
-  padding-left: 2rem;
+  padding-left: 0.8rem;
+  margin: 0;
 }
 
 .footer-nav li {
-  padding-left: 3.5rem;
+  padding-left: 3rem;
   margin: 2rem 0;
 }
 
 .footer-nav a {
   color: #b7b7b7;
   font-weight: 600;
+}
+
+.summary-link li:first-child {
+  text-transform: uppercase;
+}
+
+.nav-li:hover,
+a:hover {
+  cursor: pointer;
+  color: #1c98e6;
+  transition: color 0.7s ease-in-out;
 }
