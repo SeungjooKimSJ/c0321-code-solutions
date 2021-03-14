@@ -1,0 +1,45 @@
+/* header !!!!!!!!!!!! */
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto;
+  padding: 0 3.5rem;
+  border-bottom: 1px solid #b7b7b7;
+  width: 95%;
+}
+
+.logo {
+  color: #0a4265;
+  font-family: 'Tiempos Headline', sans-serif;
+  letter-spacing: 2px;
+  font-size: 1.3rem;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-li {
+  margin: 0 2rem;
+  color: #b7b7b7;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-li.contact {
+  background-color: #0a4265;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.8rem 1.2rem;
+}
+
+.nav-li.contact:hover {
+  cursor: pointer;
+  background-color: #1c98e6;
+  transition: background-color 0.7s ease-in-out;
+}
