@@ -45,6 +45,33 @@ a {
   transition: background-color 0.7s ease-in-out;
 }
 
+/* more !!!!!!!!!!!! */
+.more {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 3.5rem;
+}
+
+.learn-more {
+  color: #b7b7b7;
+}
+
+.learn-more h2 {
+  font-family: 'Tiempos Headline', sans-serif;
+}
+
+.get-started {
+  position: relative;
+  right: 7%;
+  background-color: #0a4265;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  padding: 1rem 3rem;
+}
+
 /* summary !!!!!!!!!!!! */
 .summary {
   background-color: #525351;
