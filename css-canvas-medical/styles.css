@@ -38,12 +38,12 @@ a {
   padding: 0.8rem 1.2rem;
 }
 
-.nav-li.contact:hover {
+/* .nav-li.contact:hover {
   cursor: pointer;
   background-color: #1c98e6;
   color: #fff;
   transition: background-color 0.7s ease-in-out;
-}
+} */
 
 /* more !!!!!!!!!!!! */
 .more {
@@ -136,4 +136,17 @@ a:hover {
   cursor: pointer;
   color: #1c98e6;
   transition: color 0.7s ease-in-out;
+}
+
+.nav-li.contact:hover,
+.get-started:hover {
+  cursor: pointer;
+  background-color: #1c98e6;
+  color: #fff;
+  transition: background-color 0.7s ease-in-out;
+}
+
+.nav-li.contact:focus,
+.get-started:focus {
+  display: none;
 }
