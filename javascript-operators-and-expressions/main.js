@@ -25,7 +25,7 @@ var lastName = 'Kim';
 var fullName = firstName + ' ' + lastName;
 
 console.log('value of fullName:', fullName);
-console.log('typeof fullName:', fullName);
+console.log('typeof fullName:', typeof fullName);
 
 var pH = 4;
 var isAcidic = pH > 7;
