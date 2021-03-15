@@ -23,7 +23,7 @@ header {
 
 .header-nav .nav-li {
   margin: 0 2rem;
-  color: #b7b7b7;
+  color: #787878;
   font-weight: 600;
 }
 
@@ -45,6 +45,46 @@ a {
   transition: background-color 0.7s ease-in-out;
 } */
 
+/* main !!!!!!!!!!!! */
+
+
+/* locate !!!!!!!!!!!! */
+.locate {
+  height: 50vh;
+  background-color: #fafafa;
+  color: #787878;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.locate-title {
+  text-align: center;
+}
+
+.locate-title h2 {
+  font-family: 'Tiempos Headline', sans-serif;
+  font-size: 2rem;
+}
+
+.locate-title p {
+  width: 25%;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.locate-list {
+  list-style: none;
+  line-height: 3;
+  font-weight: 600;
+}
+
 /* more !!!!!!!!!!!! */
 .more {
   display: flex;
@@ -54,7 +94,7 @@ a {
 }
 
 .learn-more {
-  color: #b7b7b7;
+  color: #787878;
 }
 
 .learn-more h2 {
@@ -123,7 +163,7 @@ a {
 }
 
 .footer-nav a {
-  color: #b7b7b7;
+  color: #787878;
   font-weight: 600;
 }
 
