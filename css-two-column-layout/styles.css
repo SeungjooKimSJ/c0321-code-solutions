@@ -1,0 +1,73 @@
+body {
+  font-family: 'Karla', sans-serif;
+}
+
+.intro,
+.main {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.intro {
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  margin-top: 3rem;
+}
+
+p {
+  color: #a6a6a6;
+}
+
+.intro p {
+  width: 70%;
+  margin-bottom: 3rem;
+}
+
+.each {
+  display: flex;
+}
+
+.text-content {
+  text-align: left;
+  margin: 1rem 1.2rem 2rem 1.2rem;
+}
+
+h1,
+h3,
+button {
+  text-transform: uppercase;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: #fff;
+  color: #dd7a75;
+  font-weight: 700;
+  border: 2px solid #dd7a75;
+  padding: 0.7rem 3rem;
+  margin-top: 2rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #dd7a75;
+  color: #fff;
+  transition: background-color 0.4s ease-in-out;
+}
+
+button:focus {
+  outline: none;
+}
