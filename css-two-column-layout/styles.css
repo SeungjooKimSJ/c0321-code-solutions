@@ -15,6 +15,10 @@ body {
   align-items: center;
 }
 
+.main {
+  flex-wrap: wrap;
+}
+
 h1 {
   font-weight: 800;
   font-size: 3rem;
@@ -29,11 +33,11 @@ p {
 
 .intro p {
   width: 70%;
-  margin-bottom: 3rem;
 }
 
 .each {
   display: flex;
+  flex-basis: 50%;
 }
 
 .text-content {
