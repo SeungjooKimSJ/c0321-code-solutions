@@ -4,6 +4,7 @@ var orderHistory = [
     orderDelivered: 'Aug 08, 2020',
     orderNumber: '114-3941689-8772232',
     shipTo: 'JS Masher',
+    totalAmount: '34.00',
     itemsInfo: [
       {
         product: 'book',
@@ -12,7 +13,6 @@ var orderHistory = [
           author: 'Rauschmayer, Dr. Axel'
         },
         price: '$31.55',
-        total: '$34.00',
         returnDate: 'Sep 07, 2020'
       }
     ]
@@ -22,6 +22,7 @@ var orderHistory = [
     orderDelivered: 'Jul 20, 2020',
     orderNumber: '113-9984268-1280257',
     shipTo: 'JS Masher',
+    totalAmount: '$44.53',
     itemsInfo: [
       {
         product: 'book',
@@ -30,7 +31,6 @@ var orderHistory = [
           author: 'Alexander, Christopher'
         },
         price: '$41.33',
-        total: '$44.53',
         returnDate: 'Aug 19, 2020'
       }
     ]
@@ -40,6 +40,7 @@ var orderHistory = [
     orderDelivered: 'Jul 7, 2020',
     orderNumber: '114-2875557-9059409',
     shipTo: 'JS Masher',
+    totalAmount: '$17.22',
     itemsInfo: [
       {
         product: 'controller adapter',
@@ -48,7 +49,6 @@ var orderHistory = [
           gameConsole: 'Nintendo, GameCube'
         },
         price: '$15.98',
-        total: '$17.22',
         returnDate: 'Aug 5, 2020'
       }
     ]
@@ -58,6 +58,7 @@ var orderHistory = [
     orderDelivered: 'Jul 5, 2020',
     orderNumber: '113-2883177-2648248',
     shipTo: 'JS Masher',
+    totalAmount: '$138.93',
     itemsInfo: [
       {
         product: 'controller',
@@ -66,7 +67,6 @@ var orderHistory = [
           gameConsole: 'Nintendo, GameCube'
         },
         price: '$94.95',
-        total: '138.93',
         returnDate: 'Aug 4, 2020'
       },
       {
@@ -76,7 +76,6 @@ var orderHistory = [
           author: 'Faroult, Stephane'
         },
         price: '$33.99',
-        total: '138.93',
         returnDate: 'Aug 4, 2020'
       }
     ]
