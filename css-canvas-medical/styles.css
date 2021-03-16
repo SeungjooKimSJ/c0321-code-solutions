@@ -13,12 +13,12 @@ header {
   width: 90%;
 }
 
+.header-logo {
+  margin: 2rem;
+}
+
 .logo {
-  color: #0a4265;
-  font-family: 'Tiempos Headline', sans-serif;
-  letter-spacing: 2px;
-  font-size: 1.3rem;
-  margin-left: 2rem;
+  width: 60%;
 }
 
 .header-nav {
@@ -166,20 +166,19 @@ a {
   line-height: 1.8;
   padding-top: 0.5rem;
   position: relative;
+  top: 21%;
   right: 17.5%;
   margin-left: 4rem;
 }
 
-.address h2 {
-  font-family: 'Tiempos Headline', sans-serif;
-  font-size: 2.5rem;
-  letter-spacing: 3px;
+#summary-logo {
+  margin-bottom: 1rem;
 }
 
 .summary-link {
   list-style: none;
   line-height: 2.5;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   padding-top: 2.5rem;
 }
 
@@ -208,14 +207,14 @@ a {
   font-weight: 600;
 }
 
-/* pseudo classes !!!!!!!!!!!! */
-
+/* group selectors or pseudo classes !!!!!!!!!!!! */
 .location li:last-child {
   margin-bottom: 2rem;
 }
 
 .summary-link li:first-child {
   text-transform: uppercase;
+  font-size: 1.1rem;
 }
 
 .nav-li:hover,
