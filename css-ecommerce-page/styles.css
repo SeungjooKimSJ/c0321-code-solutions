@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 1.8rem;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.each {
+  margin: 0 1rem;
+}
+
+img {
+  width: 250px;
+  height: 400px;
+}
+
+p {
+  font-weight: 600;
+}
+
+.size,
+del {
+  color: #d3d0d0;
+  font-weight: 500;
+}
+
+.price {
+  background-color: #f7e8dc;
+  color: #000;
+  padding: 1px 2px;
+  margin-right: 2px;
+}
