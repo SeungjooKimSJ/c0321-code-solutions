@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.background {
+  background-color: #fef9f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.bulb {
+  background-color: #faea84;
+  border: none;
+  border-radius: 50%;
+  width: 20vw;
+  height: 40vh;
+  box-shadow: 0 0 50px #fbeea0;
+}
+
+.bulb:focus {
+  outline: none;
+}
+
+.background.dark {
+  background-color: #111;
+}
+
+.bulb.off {
+  background-color: #252525;
+  box-shadow: 0 -30px 50px #000;
+}
