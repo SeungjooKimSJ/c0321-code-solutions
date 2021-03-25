@@ -1,8 +1,8 @@
 var $taskList = document.querySelector('.task-list');
 
-$taskList.addEventListener('click', clickTaskList);
+$taskList.addEventListener('click', clickTaskListBtn);
 
-function clickTaskList(event) {
+function clickTaskListBtn(event) {
   console.log('event.target:', event.target);
   console.log('event.target.tagName:', event.target.tagName);
 
