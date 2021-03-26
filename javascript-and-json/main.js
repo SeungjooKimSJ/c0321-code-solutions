@@ -19,15 +19,17 @@ var books = [
 console.log('value of books:', books);
 console.log('value of typeof books:', typeof books);
 
-console.log('value of JSON.stringify(books):', JSON.stringify(books));
-console.log('value of JSON.stringify(typeof books):', JSON.stringify(typeof books));
+var booksJSON = JSON.stringify(books);
 
-var student = '{"id": 716, "name": "SJ Kim"}';
+console.log('value of booksJSON:', booksJSON);
+console.log('value of typeof booksJSON:', typeof booksJSON);
 
-console.log('value of JSON.stringify(student):', JSON.stringify(student));
-console.log('value of JSON.stringify(typeof student):', JSON.stringify(typeof student));
+var studentJSON = '{"id": 716, "name": "SJ Kim"}';
 
-var object = JSON.parse(student);
+console.log('value of studentJSON:', studentJSON);
+console.log('value of typeof studentJSON:', typeof studentJSON);
 
-console.log('value of object:', object);
-console.log('value of typeof object:', typeof object);
+var student = JSON.parse(studentJSON);
+
+console.log('value of student:', student);
+console.log('value of typeof student:', typeof student);
