@@ -1,6 +1,6 @@
 var $tabContainer = document.querySelector('.tab-container');
-var $tab = document.querySelectorAll('.tab');
-var $view = document.querySelectorAll('.view');
+var $tabs = document.querySelectorAll('.tab');
+var $views = document.querySelectorAll('.view');
 
 $tabContainer.addEventListener('click', clickTabs);
 
@@ -9,21 +9,21 @@ function clickTabs(event) {
     return;
   }
 
-  for (var i = 0; i < $tab.length; i++) {
-    if ($tab[i] === event.target) {
-      $tab[i].className = 'tab active';
+  for (var i = 0; i < $tabs.length; i++) {
+    if ($tabs[i] === event.target) {
+      $tabs[i].className = 'tab active';
     } else {
-      $tab[i].className = 'tab';
+      $tabs[i].className = 'tab';
     }
   }
 
   var $dataView = event.target.getAttribute('data-view');
 
-  for (var k = 0; k < $view.length; k++) {
-    if ($view[k].getAttribute('data-view') !== $dataView) {
-      $view[k].className = 'view hidden';
+  for (var k = 0; k < $views.length; k++) {
+    if ($views[k].getAttribute('data-view') !== $dataView) {
+      $views[k].className = 'view hidden';
     } else {
-      $view[k].className = 'view';
+      $views[k].className = 'view';
     }
   }
 }
