@@ -25,6 +25,18 @@
   border-bottom: 3px solid #f80606;
 }
 
+span {
+  padding-bottom: 3px;
+}
+
 .underbar {
   border-bottom: 3px solid #000;
+}
+
+span:first-child {
+  border-bottom: 3px solid #000;
+}
+
+.hidden {
+  border: none;
 }
