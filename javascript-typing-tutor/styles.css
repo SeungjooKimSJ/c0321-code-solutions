@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.typing-container {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.typing-quote {
+  font-family: 'Indie Flower', cursive;
+  letter-spacing: 3px;
+}
+
+.correct {
+  color: #19cd1c;
+}
+
+.incorrect {
+  color: #f80606;
+  border-bottom: 3px solid #f80606;
+}
+
+.underbar {
+  border-bottom: 3px solid #000;
+}
