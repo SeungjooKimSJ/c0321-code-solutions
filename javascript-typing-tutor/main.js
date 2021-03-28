@@ -1,9 +1,9 @@
-// var $typingQuote = document.querySelector('.typing-quote');
+var $typingQuote = document.querySelector('.typing-quote');
+var $stringQuote = 'grumpy wizards make toxic brew';
 
-// for (var i = 0; i < $typingQuote.length; i++) {
-//   var $span = document.createElement('span');
+for (var i = 0; i < $stringQuote.length; i++) {
+  var $span = document.createElement('span');
 
-//   $span.textContent = $typingQuote[i];
-//   $typingQuote.appendChild($span);
-// }
-// console.log($span);
+  $span.textContent = $stringQuote[i];
+  $typingQuote.appendChild($span);
+}
