@@ -29,14 +29,11 @@ span {
   padding-bottom: 3px;
 }
 
-.underbar {
-  border-bottom: 3px solid #000;
-}
-
+.underbar,
 span:first-child {
   border-bottom: 3px solid #000;
 }
 
-.hidden {
+span.hidden {
   border: none;
 }

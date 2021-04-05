@@ -19,6 +19,7 @@ function quoteKeydown({ key }) {
   if (key === $eachSpan.textContent) {
     $eachSpan.className = 'correct hidden';
     spanIndex++;
+    $eachSpan = $allSpans[spanIndex];
     $eachSpan.className = 'underbar';
   } else {
     $eachSpan.className = 'incorrect';
