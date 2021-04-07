@@ -1,5 +1,6 @@
 var $h1 = document.querySelector('h1');
 var $currentNumberH1 = 4;
+var timerID = null;
 
 function countdown() {
   $currentNumberH1--;
@@ -7,8 +8,8 @@ function countdown() {
     $h1.textContent = $currentNumberH1;
   } else {
     $h1.textContent = '~Earth Beeeelooowww Us~';
-    window.clearInterval(countdown);
+    window.clearInterval(timerID);
   }
 }
 
-window.setInterval(countdown, 1000);
+timerID = setInterval(countdown, 1000);
