@@ -8,7 +8,7 @@ function countdown() {
     $h1.textContent = $currentNumberH1;
   } else {
     $h1.textContent = '~Earth Beeeelooowww Us~';
-    window.clearInterval(timerID);
+    clearInterval(timerID);
   }
 }
 

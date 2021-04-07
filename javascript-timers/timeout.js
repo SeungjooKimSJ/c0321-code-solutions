@@ -4,4 +4,4 @@ function helloThere() {
   $h1.textContent = 'Hello There';
 }
 
-window.setTimeout(helloThere, 2000);
+setTimeout(helloThere, 2000);
