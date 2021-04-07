@@ -16,3 +16,11 @@ Bank.prototype.openAccount = function (holder, balance) {
     return null;
   }
 };
+
+Bank.prototype.getAccount = function (number) {
+
+};
+
+Bank.prototype.getTotalAssets = function () {
+
+};
