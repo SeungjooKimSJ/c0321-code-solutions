@@ -1,14 +1,20 @@
 var $leftArrow = document.querySelector('.arrow-left');
 var $rightArrow = document.querySelector('.arrow-right');
+var $dot = document.querySelector('.dot-icons');
 
 var $cards = document.querySelectorAll('.card');
 
 var currentSlide = 0;
+var currentDot = 0;
 
-$leftArrow.addEventListener('click', clickLeftArrowIcon);
-$rightArrow.addEventListener('click', clickRightArrowIcon);
+$leftArrow.addEventListener('click', slideLeft);
+$rightArrow.addEventListener('click', slideRight);
 
-function clickLeftArrowIcon(event) {
+$dot.addEventListener('click', clickDotIcon);
+
+setInterval(slideRight, 3000);
+
+function slideLeft(event) {
   $cards[currentSlide].className = 'card hidden';
   currentSlide = currentSlide - 1;
 
@@ -18,7 +24,7 @@ function clickLeftArrowIcon(event) {
   $cards[currentSlide].className = 'card';
 }
 
-function clickRightArrowIcon(event) {
+function slideRight(event) {
   $cards[currentSlide].className = 'card hidden';
   currentSlide = currentSlide + 1;
 
@@ -27,3 +33,11 @@ function clickRightArrowIcon(event) {
   }
   $cards[currentSlide].className = 'card';
 }
+
+// function clickDotIcon(event) {
+//   if (currentDot === ) {
+//     console.log('hi');
+//   } else if (currentDot === ) {
+//     console.log('hi2');
+//   }
+// }

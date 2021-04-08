@@ -31,7 +31,7 @@ body {
 }
 
 img {
-  border: 4px solid #000;
+  border: 4px solid #24215a;
   border-radius: 50px;
 }
 
@@ -57,10 +57,11 @@ img {
   /* transition: color 0.7s ease-in-out; */
 }
 
-.dots {
+.dot-icons {
+  display: flex;
   position: absolute;
-  bottom: 6%;
-  left: 38%;
+  top: 43%;
+  left: 41.5%;
 }
 
 .fa-circle {
@@ -78,6 +79,7 @@ img {
 .fa-circle {
   color: #fff;
   transition: color 0.7s ease-in-out;
+  opacity: 1;
 }
 
 .card h3:hover,
