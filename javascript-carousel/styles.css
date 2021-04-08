@@ -3,8 +3,90 @@
 }
 
 body {
-  /* font-family: 'Architects Daughter', cursive; */
-
-  /* font-family: 'Balsamiq Sans', cursive; */
   font-family: 'Lexend', sans-serif;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  margin: 2rem auto;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+
+  /* color: #fff; */
+
+  /* transition: color 0.7s ease-in-out; */
+  position: absolute;
+  margin-top: 2rem;
+  margin-left: 3rem;
+  cursor: pointer;
+}
+
+img {
+  border: 4px solid #000;
+  border-radius: 50px;
+}
+
+.arrow-icons {
+  cursor: pointer;
+}
+
+.arrow-left {
+  left: 20%;
+}
+
+.arrow-right {
+  right: 20%;
+}
+
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  top: 25%;
+
+  /* color: #fff; */
+
+  /* transition: color 0.7s ease-in-out; */
+}
+
+.dots {
+  position: absolute;
+  bottom: 6%;
+  left: 38%;
+}
+
+.fa-circle {
+  margin-right: 1rem;
+  cursor: pointer;
+
+  /* color: #fff; */
+
+  /* transition: color 0.7s ease-in-out; */
+}
+
+.card h3,
+.arrow-left,
+.arrow-right,
+.fa-circle {
+  color: #fff;
+  transition: color 0.7s ease-in-out;
+}
+
+.card h3:hover,
+.arrow-left:hover,
+.arrow-right:hover,
+.fa-circle:hover {
+  color: #ffa689;
+}
+
+.hidden {
+  display: none;
 }
