@@ -5,14 +5,15 @@ function Bank() {
 }
 
 Bank.prototype.openAccount = function (holder, balance) {
-  if (this.accounts.balance > 0) {
+  if (balance > 0 && Number.isInteger(balance)) {
     var newAccount = new Account(this.nextAccountNumber, holder);
 
+    newAccount.deposit(balance);
     this.accounts.push(newAccount);
     this.nextAccountNumber++;
 
-    return Account;
-  } else if (this.accounts.balance < 0) {
+    return newAccount.number;
+  } else {
     return null;
   }
 };
