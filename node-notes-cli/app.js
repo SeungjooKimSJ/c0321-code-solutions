@@ -2,8 +2,8 @@ const fs = require('fs');
 const data = require('./data.json');
 
 /* User can read their notes */
-for (const key in data.notes) {
-  if (process.argv[2] === 'read') {
+if (process.argv[2] === 'read') {
+  for (const key in data.notes) {
     console.log(`${key}: ${data.notes[key]}`);
   }
 }
