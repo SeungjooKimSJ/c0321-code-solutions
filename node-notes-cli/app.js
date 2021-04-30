@@ -19,3 +19,14 @@ if (process.argv[2] === 'create') {
     if (err) throw err;
   });
 }
+
+/* User can delete a note */
+if (process.argv[2] === 'delete') {
+  const key = process.argv[3];
+
+  delete data.notes[key];
+
+  fs.writeFile('./data.json', JSON.stringify(data, null, 2), 'utf8', err => {
+    if (err) throw err;
+  });
+}
