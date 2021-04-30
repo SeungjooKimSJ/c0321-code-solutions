@@ -20,7 +20,7 @@ if (process.argv[2] === 'create') {
   });
 }
 
-/* User can delete a note */
+/*User can delete a note*/
 if (process.argv[2] === 'delete') {
   const key = process.argv[3];
 
@@ -29,4 +29,10 @@ if (process.argv[2] === 'delete') {
   fs.writeFile('./data.json', JSON.stringify(data, null, 2), 'utf8', err => {
     if (err) throw err;
   });
+}
+
+/*User can update a note*/
+if (process.argv[2] === 'update') {
+  const key = process.argv[3];
+
 }
