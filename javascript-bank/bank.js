@@ -1,4 +1,5 @@
 /* exported Bank */
+
 function Bank() {
   this.nextAccountNumber = 1;
   this.accounts = [];
@@ -30,5 +31,10 @@ Bank.prototype.getAccount = function (number) {
 };
 
 Bank.prototype.getTotalAssets = function () {
+  var grandTotal = 0;
 
+  for (var m = 0; m < this.accounts.length; m++) {
+    grandTotal += this.accounts[m].getBalance();
+  }
+  return grandTotal;
 };

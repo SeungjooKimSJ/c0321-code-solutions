@@ -1,4 +1,5 @@
 /* exported Account */
+
 function Account(number, holder) {
   this.number = number;
   this.holder = holder;
@@ -15,7 +16,7 @@ Account.prototype.deposit = function (amount) {
   } else {
     return false;
   }
-}
+};
 
 Account.prototype.withdraw = function (amount) {
   if (amount > 0) {
@@ -27,7 +28,7 @@ Account.prototype.withdraw = function (amount) {
   } else {
     return false;
   }
-}
+};
 
 Account.prototype.getBalance = function (amount) {
   var totalAmount = 0;
@@ -40,4 +41,4 @@ Account.prototype.getBalance = function (amount) {
     }
   }
   return totalAmount;
-}
+};
