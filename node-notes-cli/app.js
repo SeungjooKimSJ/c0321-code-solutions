@@ -1,14 +1,12 @@
 const fs = require('fs');
 const data = require('./data.json');
 
-/* User can read their notes */
 if (process.argv[2] === 'read') {
   for (const key in data.notes) {
     console.log(`${key}: ${data.notes[key]}`);
   }
 }
 
-/* User can add a note */
 if (process.argv[2] === 'create') {
   const key = data.nextId;
 
@@ -20,7 +18,6 @@ if (process.argv[2] === 'create') {
   });
 }
 
-/* User can delete a note */
 if (process.argv[2] === 'delete') {
   const key = process.argv[3];
 
@@ -31,7 +28,6 @@ if (process.argv[2] === 'delete') {
   });
 }
 
-/* User can update a note */
 if (process.argv[2] === 'update') {
   const key = process.argv[3];
 
