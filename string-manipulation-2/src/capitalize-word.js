@@ -1,7 +1,11 @@
 /* exported capitalizeWord */
 function capitalizeWord(word) {
-  var upperCase = word[0].toUpperCase();
-  var lowerCase = word.slice(1).toLowerCase();
+  const upperCase = word[0].toUpperCase();
+  const lowerCase = word.slice(1).toLowerCase();
+  const newWord = upperCase + lowerCase;
 
-  return upperCase + lowerCase;
+  if (newWord === 'Javascript') {
+    return 'JavaScript';
+  }
+  return newWord;
 }
