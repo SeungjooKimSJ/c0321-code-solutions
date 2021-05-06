@@ -65,6 +65,16 @@ app.delete('/api/notes/:id', (req, res) => {
   }
 });
 
+app.put('/api/notes/:id', (req, res) => {
+  const noteData = req.body;
+
+  if (req.params.id < 0) {
+    res.status(400).json({ error: 'id must be a positive integer' });
+  } else if (noteData.content === undefined) {
+    res.status(400).json({ error: 'content is a required field' });
+  } else if ()
+});
+
 app.listen(3000, () => {
   // eslint-disable-next-line no-console
   console.log('Listening on port 3000!');
