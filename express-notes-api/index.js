@@ -72,7 +72,9 @@ app.put('/api/notes/:id', (req, res) => {
     res.status(400).json({ error: 'id must be a positive integer' });
   } else if (noteData.content === undefined) {
     res.status(400).json({ error: 'content is a required field' });
-  } else if ()
+  } else if (noteData.content !== undefined) {
+    res.status(404).json({ error: `cannot find note with id ${req.params.id}` });
+  }
 });
 
 app.listen(3000, () => {
