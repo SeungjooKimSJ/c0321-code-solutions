@@ -27,6 +27,22 @@ app.get('/api/grades', (req, res) => {
     });
 });
 
+const jsonMiddleware = express.json();
+
+app.use(jsonMiddleware);
+
+app.post('/api/grades', (req, res) => {
+  const name = req.body.name;
+  const course = req.body.course;
+  const score = parseInt(req.body.score, 10);
+
+  if (!name || !course | !score) {
+    res.status(400).json({ error: 'Must include the name, course, and score' });
+  } else if (!Number.isInteger(score) || score < 1 || score > 100) {
+    res.status(400).json({ error: 'Score must be an integer number between 1 and 100' });
+  }
+});
+
 app.listen(3000, () => {
   // eslint-disable-next-line no-console
   console.log('Listening on port 3000!');
