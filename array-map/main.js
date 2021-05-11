@@ -18,7 +18,7 @@ const doubled = numbers.map(getDoubled);
 console.log('value of doubled:', doubled);
 
 const numsToPrices = number => {
-  const toDollarPrices = `${number.toFixed(2)}`;
+  const toDollarPrices = `$${number.toFixed(2)}`;
 
   return toDollarPrices;
 };
