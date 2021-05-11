@@ -13,7 +13,7 @@ const app = express();
 app.get('/api/grades', (req, res) => {
   const sql = `
     select *
-    from "grades"
+      from "grades"
   `;
 
   db.query(sql)
@@ -40,6 +40,26 @@ app.post('/api/grades', (req, res) => {
     res.status(400).json({ error: 'Must include the name, course, and score' });
   } else if (!Number.isInteger(score) || score < 1 || score > 100) {
     res.status(400).json({ error: 'Score must be an integer number between 1 and 100' });
+  } else {
+    const sql = `
+      insert into "grades" ("name", "course", "score")
+        values ($1, $2, $3)
+      returning *
+    `;
+
+    const params = [name, course, score];
+
+    db.query(sql, params)
+      .then(result => {
+        const grade = result.rows[0];
+
+        res.status(201).json(grade);
+      })
+
+      .catch(err => {
+        console.error(err);
+        res.status(500).json({ error: 'An unexpected error occurred.' });
+      });
   }
 });
 
