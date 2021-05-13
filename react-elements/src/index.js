@@ -7,7 +7,7 @@ const firstReactH1 = React.createElement(
   'Hello, React!'
 );
 
-ReactDom.render(
+ReactDOM.render(
   firstReactH1,
   document.querySelector('#root')
 );
