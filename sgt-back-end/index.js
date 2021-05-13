@@ -126,7 +126,7 @@ app.delete('/api/grades/:gradeId', (req, res) => {
         if (!grade) {
           res.status(404).json({ error: `Cannot find grade with gradeId ${gradeId}` });
         } else {
-          res.status(200).json(grade);
+          res.status(204).json(grade);
         }
       })
 
