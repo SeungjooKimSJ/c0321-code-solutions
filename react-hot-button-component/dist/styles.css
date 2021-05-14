@@ -1,0 +1,43 @@
+button {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.8rem 1.2rem;
+  border: 2px solid black;
+  box-shadow: 3px 3px 3px black;
+}
+
+.btn-purple {
+  background-color: #351c75;
+}
+
+.btn-lavender {
+  background-color: #674ea7;
+}
+
+.btn-coral {
+  background-color: #e06666;
+}
+
+.btn-apricot {
+  background-color: #f6b26b;
+}
+
+.btn-yellow {
+  background-color: #ff0;
+}
+
+.btn-white {
+  background-color: #fff;
+}
+
+.btn-purple,
+.btn-lavender,
+.btn-coral {
+  color: #fff;
+}
+
+.btn-apricot,
+.btn-yellow,
+.btn-white {
+  color: #000;
+}
