@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+}
+
+.switch {
+  position: relative;
+  width: 80px;
+  height: 35px;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: #e2e2e2;
+}
+
+.toggleSwitch {
+  position: absolute;
+  background-color: #fff;
+  width: 33px;
+  height: 33px;
+  border: 1px solid #000;
+  border-radius: 20px;
+}
+
+.onOff {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}
+
+.on {
+  background-color: #6aa84f;
+}
+
+.right {
+  right: 0;
+}

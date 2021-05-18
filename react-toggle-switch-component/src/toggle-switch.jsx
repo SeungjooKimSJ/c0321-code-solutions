@@ -1,16 +1,19 @@
 import React from 'react';
 
-const isOn = true;
-
 class ToggleSwitch extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { isOn: false };
-    this.ToggleStatus = this.ToggleStatus.bind(this);
+    this.state = { isOn: true };
+    this.toggleStatusOn = this.toggleStatusOn.bind(this);
+    this.toggleStatusOff = this.toggleStatusOff.bind(this);
   }
 
-  ToggleStatus() {
+  toggleStatusOn() {
     this.setState({ isOn: true });
+  }
+
+  toggleStatusOff() {
+    this.setState({ isOn: false });
   }
 
   render() {
@@ -20,24 +23,22 @@ class ToggleSwitch extends React.Component {
       return (
         <div className="container">
           <div className="switch">
-            <button className="toggle-On" onClick={this.ToggleStatus}></button>
+            <div className="toggleSwitch" onClick={this.toggleStatusOff}></div>
           </div>
-          <div className="onOff">On</div>
+          <div className="onOff">Off</div>
         </div>
       );
     } else {
       return (
         <div className="container">
-          <div className="switch">
-            <button className="toggle-On" onClick={this.ToggleStatus}></button>
+          <div className="switch on">
+            <div className="toggleSwitch right" onClick={this.toggleStatusOn}></div>
           </div>
-          <div className="onOff">Off</div>
+          <div className="onOff">On</div>
         </div>
       );
     }
   }
-
-  isOn = !isOn;
 }
 
 export default ToggleSwitch;
