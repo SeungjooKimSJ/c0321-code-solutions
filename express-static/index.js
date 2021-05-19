@@ -3,9 +3,9 @@ const path = require('path');
 
 const app = express();
 
-const pathJoin = path.join(__dirname, 'public');
+const joinPublicPath = path.join(__dirname, 'public');
 
-const staticMiddleware = express.static(pathJoin);
+const staticMiddleware = express.static(joinPublicPath);
 
 app.use(staticMiddleware);
 
