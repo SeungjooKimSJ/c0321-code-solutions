@@ -40,16 +40,22 @@ export default class App extends React.Component {
     * TIP: Be sure to SERIALIZE the todo object in the body with JSON.stringify()
     * and specify the "Content-Type" header as "application/json"
     */
-    fetch('/api/todos', {
+    const headers = new Headers();
+    headers.set('Content-Type', 'application/json');
+
+    const bodyJSON = JSON.stringify(newTodo);
+
+    const req = {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(newTodo)
-    })
+      headers: headers,
+      body: bodyJSON
+    };
+
+    fetch('/api/todos', req)
       .then(res => res.json())
       .then(todo => {
         const updatedTodo = this.state.todos.slice();
+
         updatedTodo.push(todo);
         this.setState({
           todos: updatedTodo
@@ -86,9 +92,12 @@ export default class App extends React.Component {
     const update = {
       isCompleted: !isCompleted
     };
-    const bodyJSON = JSON.stringify(update);
+
     const headers = new Headers();
     headers.set('Content-Type', 'application/json');
+
+    const bodyJSON = JSON.stringify(update);
+
     const req = {
       method: 'PATCH',
       headers: headers,
@@ -99,6 +108,7 @@ export default class App extends React.Component {
       .then(res => res.json())
       .then(updatedTodo => {
         const newTodos = this.state.todos.slice();
+
         newTodos[index] = updatedTodo;
         this.setState({
           todos: newTodos
