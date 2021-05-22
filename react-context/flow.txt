@@ -1,0 +1,21 @@
+* User can sign up.
+  - In the main page, users can determine between sign in and
+  sign up. If users don't have an account yet they have to
+  create account first. There are two ways to sign up. Either,
+  a user can click Sign Up button on the navbar or click an anchor
+  tag on the bottom of the form left side.
+  <Need to explain how the code flow!!>
+
+
+  If a user have an account already then you can click
+  Sign In button on the nav var and type in your account and
+  password into the Username and Password input place.
+
+* User can sign in.
+  - explain..
+
+* User can stay signed in (even if they refresh the page).
+  - explain..
+
+* User can sign out.
+  - explain..
